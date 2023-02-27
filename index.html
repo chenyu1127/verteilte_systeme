@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trainingsplan Konfigurator</title>
+</head>
+<body>
+    <h1>Trainingsplan Konfigurator</h1>
+
+    <!--Übungsdatenbank-->
+    <ul id="exercise-list">
+        <!--Hier werden die Übungen aus der Datenbank angezeigt-->
+    </ul>
+    <input type="text" id="new-exercise-name">
+    <button onclick="addExercise()">Übungen hinzufügen</button>
+
+    <!--Trainigsplan-Konfigzurator-->
+    <ul>
+        <!--Hier werden die Übungen und Sets angezeigt-->
+    </ul>
+    <select name="exercise-dropdown" id="exercise-dropdown">
+        <!--Hier werden die Übungen aus der Datenbank als Dorpdown angezeigt-->
+    </select>
+    <input type="nunmber" id="sets-input">
+    <button onclick="addWorkout()">Zum Plan hinzufügen</button>
+    <!--Wochenrückblick-->
+    <h2>Wochenrückblick</h2>
+    <ul id="weekly-summary">
+        <!--Hier wird der Wochenrückblick angezeigt-->
+    </ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
