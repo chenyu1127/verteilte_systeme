@@ -1,0 +1,213 @@
+<style>
+    @media screen and (min-width: 800px){
+        html{
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            height: 100%;
+            margin-left: 200px;
+            padding: 0;
+        }
+        main {
+            background-color: black;
+            padding: 10px;
+            border-left: 2px white solid ;
+            height: 100%;
+        }
+
+        main .input > div {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        .input > div > input  {
+            border-radius: 25px;
+            padding: 10px;
+            margin: 20px;
+            width: 50%;
+            
+        }
+        h2, p, .input{
+            color: white;
+            text-align: center;
+            font-family: 'Quicksand', sans-serif; 
+        }
+        #info {
+            font-size: 20px;
+        }
+        .title, .interpret, .album, .duration, .URL {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+        .music {
+            color: #1ed761;
+        }
+
+        /* AKTIONSBUTTONS */
+        .actions {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .actions > div {
+            display: flex;
+            padding: 5px;
+            margin: 5px;
+            background-color: #1ed761;
+            transition: background-color 0.5s;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 50%;
+            border-radius: 25px;
+            min-height: 40px;
+            font-size: 22px;
+          
+            
+        }
+        .save {
+            font-family: 'Quicksand', sans-serif; 
+        }
+        
+        .actions > div:hover {
+            cursor: pointer;
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+    }
+    @media screen and (max-width: 800px){
+        html{
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            height: 100%;
+            margin-left: 90px;
+            padding: 0;
+        }
+        main {
+            background-color: black;
+            padding: 10px;
+            border-left: 2px white solid ;
+            height: 100%;
+        }
+
+        main .input > div {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        .input > div > input  {
+            border-radius: 25px;
+            padding: 10px;
+            margin: 20px;
+            width: 50%;
+            
+        }
+        h2, p, .input{
+            color: white;
+            text-align: center;
+            font-family: 'Quicksand', sans-serif; 
+        }
+        #info {
+            font-size: 20px;
+        }
+        .title, .interpret, .album, .duration, .URL {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+        .music {
+            color: #1ed761;
+        }
+
+        /* AKTIONSBUTTONS */
+        .actions {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .actions > div {
+            display: flex;
+            padding: 5px;
+            margin: 5px;
+            background-color: #1ed761;
+            transition: background-color 0.5s;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 50%;
+            border-radius: 25px;
+            min-height: 40px;
+            font-size: 22px;
+          
+            
+        }
+        .save {
+            font-family: 'Quicksand', sans-serif; 
+        }
+        
+        .actions > div:hover {
+            cursor: pointer;
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+    }
+</style>
+<html>
+    <body>
+        <main>
+            <div>
+                <h2>Speichern Sie Ihre <a class="music">Musik</a> in die Musikbibliothek !</h2>
+                <p id="info">Informationen zum Song:</p>
+                <div class="input">
+                    <div class="title">
+                        <p>Titel des Songs: </p>
+                        <input class="title" placeholder="Titel des Songs *" value="$TITLE$" />
+                    </div>
+                    <div class="interpret">
+                        <p>Interpreten des Songs: </p>
+                        <input class="singer" placeholder="Interpret *" value="$SINGER$" />
+                    </div>
+                    <div class="album">
+                        <p>Album des Songs: </p>
+                        <input class="album" placeholder="Album" value="$ALBUM$" />
+                    </div>
+                    <div class="duration">
+                        <p>Dauer des Songs:</p>
+                        <input class="duration" placeholder="Dauer in 0:00" value="$DURATION$" />
+                    </div>
+                    <div class="URL">
+                        <p>URL des Songs:</p>
+                        <input class="audio" placeholder="URL" value="$AUDIO$" />
+                    </div>
+                </div>
+                <p>* Pflichtfelder</p>
+                    <div class="actions">
+                        <div class="action save">
+                            <a class ="fa fa-music"><a class="save">&nbsp;&nbsp;Speichern</a></a>
+                        </div>
+                    </div>
+            </div>
+                
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

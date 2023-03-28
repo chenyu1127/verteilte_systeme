@@ -1,36 +1,35 @@
 <!DOCTYPE html>
-<html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trainingsplan Konfigurator</title>
-</head>
-<body>
-    <h1>Trainingsplan Konfigurator</h1>
-
-    <!--Übungsdatenbank-->
-    <ul id="exercise-list">
-        <!--Hier werden die Übungen aus der Datenbank angezeigt-->
-    </ul>
-    <input type="text" id="new-exercise-name">
-    <button onclick="addExercise()">Übungen hinzufügen</button>
-
-    <!--Trainigsplan-Konfigzurator_TEST-->
-    <ul>
-        <!--Hier werden die Übungen und Sets angezeigt-->
-    </ul>
-    <select name="exercise-dropdown" id="exercise-dropdown">
-        <!--Hier werden die Übungen aus der Datenbank als Dorpdown angezeigt-->
-    </select>
-    <input type="nunmber" id="sets-input">
-    <button onclick="addWorkout()">Zum Plan hinzufügen</button>
-    <!--Wochenrückblick-->
-    <h2>Wochenrückblick</h2>
-    <ul id="weekly-summary">
-        <!--Hier wird der Wochenrückblick angezeigt-->
-    </ul>
-
-    <script src="script.js"></script>
-</body>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Workoutplan</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="index.css" rel="stylesheet" />
+        <style id="page-css"></style>
+        <link rel="shortcut icon" type="image/x-icon" href="img/logo_small.ico" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <nav class="nav" id="app-menu">
+            <div class= "img">
+                <img src="../img/logo.png"> 
+            </div>
+            <ul>
+                <li data-page-name="list">
+                    <a class="fa fa-home" id="home" href="#/"></a>
+                    &nbsp;
+                    <a class="btntext" href="#/">Startseite</a>
+          
+                </li>
+                <li data-page-name="new">
+                    <a class="fa fa-plus" id="plus"  href="#/new/"></a>
+                    &nbsp;
+                    <a class="btntext" href="#/new/">Training hinzufügen</a>
+                </li>
+            </ul>
+        </nav>
+        <div id="app">
+            <script src="app.js" type="module"></script>
+        </div>
+    </body>
 </html>

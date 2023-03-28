@@ -1,0 +1,308 @@
+
+<style>
+    @media screen and (min-width:870px) {
+        
+    
+        main ol {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        main li {
+            margin: 0;
+            padding: 10px;
+            padding-bottom: 10px;
+            border: 2px solid white;
+            border-bottom-width: 1px;
+        }
+
+        main li:hover {
+            background-color: #242322;
+            transition: background-color 0.5s;
+        }
+
+        main .title {
+            font-size: 30px;
+            color: white;
+            padding-bottom: 10px;
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        .album{
+            font-size: 20px;
+            color: white;
+            padding-bottom: 5px;
+        }
+        .duration{
+            font-size: 16px;
+            color: white;
+        }
+
+        /* AKTIONSBUTTONS */
+        main .actions > div {
+            padding: 10px;
+            margin: 10px;
+            background-color: #1ed761;
+        }
+
+        .info{
+            width: 50%;
+            padding-top: 20px;
+        }
+        .actions{
+        height: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+        .slider {
+        height: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+
+        main .actions > div:hover{
+            background-color: gray;
+            cursor: pointer;
+        }
+        .list-entry{
+            height: 300px;
+            display: flex;
+            flex-direction: row;
+            background-color: black;
+            font-family: 'Quicksand', sans-serif; ;
+        }
+        .image {
+            width: 20%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 28px;
+            min-width: 200px;
+            margin-right: 16px;
+        }
+        #img{
+            max-height: 200px;
+        }
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+        }
+        #play {
+            height: 45px;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #play{
+            width: 70%;
+            font-size: 40px;
+        }
+        .slider{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: stretch;
+        }
+        .timer{
+            color: white;
+            font-size: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .singer {
+            padding-top:10px;
+            font-weight: bold;
+        }
+        .sample {
+            font-size: 20px;
+            font-family: 'Quicksand', sans-serif; 
+            font-weight: bold;
+        }
+    }
+    @media screen and (max-width: 870px) {
+        main ol {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        main li {
+            margin: 0;
+            padding: 1em;
+            padding-bottom: 0.5em;
+            border: 2px solid lightgrey;
+            border-bottom-width: 1px;
+        }
+
+        main li:hover {
+            background-color: #242322;
+            transition: background-color 0.5s;
+        }
+
+        main .title {
+            display: flex;
+            flex-wrap: nowrap;
+            font-size: 22px;
+            color: white;
+            padding-bottom: 10px;
+            min-width: 160px ;
+            text-align: center;
+        }
+        .album{
+            font-size: 16px;
+            color: white;
+            padding-bottom: 5px;
+            display: none;
+        }
+        .duration{
+            font-size: 12px;
+            color: white;
+            display: none;
+        }
+        main .actions > div {
+            padding: 10px;
+            margin: 10px;
+            background-color: #1ed761;
+        }
+
+        .info{
+            width: 0%;
+            padding-top: 20px;
+        }
+        .actions{
+        height: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        }
+        .slider {
+        height: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+
+        main .actions > div:hover{
+            background-color: gray;
+            cursor: pointer;
+        }
+        .list-entry{
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            background-color: black;
+            font-family: 'Quicksand', sans-serif; 
+            width: 100%;
+            justify-content: center;
+            min-width: 400px;
+        }
+        .image {
+            width: 15%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 28px;
+            width: 150px;
+            margin-right: 16px;
+            margin-left: 16px;
+        }
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            max-height: 30px ;
+            width: 35%;
+        }
+        #play {
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #play{
+            width: 70%;
+            font-size: 40px;
+        }
+        .slider{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: stretch;
+        }
+        .timer{
+            color: white;
+            font-size: 12px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .singer {
+            display: flex;
+            flex-wrap: nowrap;
+            font-size: 22px;
+            padding-top:10px;
+            font-weight: bold;
+        }
+        .sample {
+            display: none;
+        }
+    }
+
+</style>
+<main>
+    <ol>
+        <li class="empty-placeholder">
+            <div class="name">
+                Keine Einträge vorhanden
+            </div>
+        </li>
+        <li class="list-entry" data-id="$ID$">
+            <div class="image">
+                $IMAGE$ 
+                <div class="singer">
+                    $SINGER$
+                </div>
+            </div>
+            <div class="info">
+                <div class="title">
+                    $TITLE$
+                    <p></p>
+                </div>
+                <div class="album">
+                    Album:&nbsp;$ALBUM$
+                </div>
+                <div class="duration" id="test">
+                    URL:&nbsp;$AUDIO$
+                </div>
+            </div>
+            <div class="buttons">
+                <div class="slider">
+                    <div class="timer">
+                        <div class="current-time">0:00</div>
+                        <div class="total-time">$DURATION$</div>
+                    </div>
+                    <input type="range" min="1" max="100" value="0" class="seek_slider">
+                </div>
+                <div class="actions">
+                    <div class="action play" id="play">
+                        <a id="playbtn" class="fa fa-play-circle"><a class="sample">&nbsp;&nbsp;Sample</a></a>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ol>
+</main>
+  
