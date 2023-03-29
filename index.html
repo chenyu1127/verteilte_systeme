@@ -11,9 +11,7 @@
     <div class="container">
         <h1>Workoutplan</h1>
         <hr>
-        <div class="row">
-            <div class="col-md-6">
-                <h2>Übungen</h2>
+                <h2>Übung hinzufügen</h2>
                 <ul class="list-group" id="uebungen-liste">
                 </ul>
                 <hr>
@@ -28,7 +26,21 @@
                     </div>
                     <div class="form-group">
                         <label for="schwerpunkt">Schwerpunkt</label>
-                        <input type="text" class="form-control" id="schwerpunkt" placeholder="Schwerpunkt">
+                        <select class="select">
+                            <option value="1">Brust</option>
+                            <option value="2">Oberer Rücken</option>
+                            <option value="3">Unterer Rücken</option>
+                            <option value="4">Bizeps</option>
+                            <option value="5">Oberschenkel</option>
+                            <option value="6">Waden</option>
+                            <option value="7">Unterarm</option>
+                            <option value="8">Shulter</option>
+                            <option value="9">Trizeps</option>
+                            <option value="10">Nacken</option>
+                            <option value="11">Gluteus</option>
+                            <option value="12">Unterschenkel</option>
+                            <option value="13">Cardio</option>
+                          </select>
                     </div>
                     <div class="form-group">
                         <label for="sets">Sets</label>
@@ -36,34 +48,10 @@
                     </div>
                     <div class="form-group">
                         <label for="zeit">Zeit</label>
-                        <input type="number" class="form-control" id="zeit" placeholder="Zeit">
+                        <input type="time" class="form-control" id="zeit" placeholder="Zeit">
                     </div>
                     <button type="submit" class="btn btn-primary">Hinzufügen</button>
                 </form>
-            </div>
-            <div class="col-md-6">
-                <h2>Wochenplan</h2>
-                <ul class="list-group" id="wochenplan-liste">
-                </ul>
-                <hr>
-                <form id="form-wochenplan">
-                    <div class="form-group">
-                        <label for="uebung">Übung</label>
-                        <select class="form-control" id="uebung">
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="sets">Sets</label>
-                        <input type="number" class="form-control" id="sets" placeholder="Sets">
-                    </div>
-                    <div class="form-group">
-                        <label for="zeit">Zeit</label>
-                        <input type="number" class="form-control" id="zeit" placeholder="Zeit">
-                    </div>
-                    <button type="submit" class="btn btn-primary">Hinzufügen</button>
-                </form>
-            </div>
-        </div>
     </div>
 
     <!-- jQuery -->
