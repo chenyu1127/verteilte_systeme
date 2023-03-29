@@ -61,7 +61,7 @@ app.get('/wochenplan', async(req, res)=>{
 
 app.post('/wochenplan', async(req, res)=>{
     const {uebungId, sets, zeit} = req.body;
-    const uebung = await Uebung.findByID(uebungId);
+    const uebung = await Uebung.findById(uebungId);
     const eintrag = {uebung, sets, zeit};
     wochenplan.push(eintrag);
     res.json(eintrag);
