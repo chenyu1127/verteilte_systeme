@@ -1,36 +1,76 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trainingsplan Konfigurator</title>
+    <title>Workoutplan</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-    <h1>Trainingsplan Konfigurator</h1>
+    <div class="container">
+        <h1>Workoutplan</h1>
+        <hr>
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Übungen</h2>
+                <ul class="list-group" id="uebungen-liste">
+                </ul>
+                <hr>
+                <form id="form-uebung">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Übungsname">
+                    </div>
+                    <div class="form-group">
+                        <label for="beschreibung">Beschreibung</label>
+                        <textarea class="form-control" id="beschreibung" rows="3" placeholder="Beschreibung"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="schwerpunkt">Schwerpunkt</label>
+                        <input type="text" class="form-control" id="schwerpunkt" placeholder="Schwerpunkt">
+                    </div>
+                    <div class="form-group">
+                        <label for="sets">Sets</label>
+                        <input type="number" class="form-control" id="sets" placeholder="Sets">
+                    </div>
+                    <div class="form-group">
+                        <label for="zeit">Zeit</label>
+                        <input type="number" class="form-control" id="zeit" placeholder="Zeit">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Hinzufügen</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <h2>Wochenplan</h2>
+                <ul class="list-group" id="wochenplan-liste">
+                </ul>
+                <hr>
+                <form id="form-wochenplan">
+                    <div class="form-group">
+                        <label for="uebung">Übung</label>
+                        <select class="form-control" id="uebung">
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="sets">Sets</label>
+                        <input type="number" class="form-control" id="sets" placeholder="Sets">
+                    </div>
+                    <div class="form-group">
+                        <label for="zeit">Zeit</label>
+                        <input type="number" class="form-control" id="zeit" placeholder="Zeit">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Hinzufügen</button>
+                </form>
+            </div>
+        </div>
+    </div>
 
-    <!--Übungsdatenbank-->
-    <ul id="exercise-list">
-        <!--Hier werden die Übungen aus der Datenbank angezeigt-->
-    </ul>
-    <input type="text" id="new-exercise-name">
-    <button onclick="addExercise()">Übungen hinzufügen</button>
-
-    <!--Trainigsplan-Konfigzurator_TEST-->
-    <ul>
-        <!--Hier werden die Übungen und Sets angezeigt-->
-    </ul>
-    <select name="exercise-dropdown" id="exercise-dropdown">
-        <!--Hier werden die Übungen aus der Datenbank als Dorpdown angezeigt-->
-    </select>
-    <input type="nunmber" id="sets-input">
-    <button onclick="addWorkout()">Zum Plan hinzufügen</button>
-    <!--Wochenrückblick-->
-    <h2>Wochenrückblick</h2>
-    <ul id="weekly-summary">
-        <!--Hier wird der Wochenrückblick angezeigt-->
-    </ul>
-
-    <script src="script.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="app.js"></script>
 </body>
 </html>
